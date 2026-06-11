@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">EcoAgro</div>
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#producao">Produção</a>
+            <a href="#sustentabilidade">Sustentabilidade</a>
+            <a href="#simulador">Simulador</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>O equilíbrio perfeito entre a alta produtividade e a preservação do meio ambiente.</p>
+            <a href="#simulador" class="btn">Testar Simulador</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="producao" class="info-section">
+            <h2>Agro Forte: Tecnologia no Campo</h2>
+            <p>A tecnologia moderna, como drones, sensores de solo e maquinários automatizados, permite produzir mais alimentos utilizando menos recursos naturais.</p>
+        </section>
+
+        <section id="sustentabilidade" class="info-section">
+            <h2>Futuro Sustentável: Práticas Verdes</h2>
+            <p>Adoção de energia solar, rotação de culturas, reflorestamento de áreas degradadas e reuso de água garantem que as próximas gerações também herdem uma terra fértil.</p>
+        </section>
+
+        <section id="simulador" class="simulador-section">
+            <h2>Simulador de Fazenda Sustentável</h2>
+            <p>Escolha quais práticas quer adotar na sua fazenda e veja o impacto ecológico:</p>
+            
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" id="chk-energia" onchange="calcularSustentabilidade()"> Uso de Energia Solar (+30%)
+                </label>
+                <label>
+                    <input type="checkbox" id="chk-agua" onchange="calcularSustentabilidade()"> Captação de Água da Chuva (+30%)
+                </label>
+                <label>
+                    <input type="checkbox" id="chk-plantio" onchange="calcularSustentabilidade()"> Plantio Direto / Rotação (+40%)
+                </label>
+            </div>
+
+            <div class="resultado-container">
+                <h3>Índice de Sustentabilidade: <span id="porcentagem">0%</span></h3>
+                <div class="barra-progresso">
+                    <div id="barra" class="barra-preenchimento"></div>
+                </div>
+                <p id="mensagem-feedback">Sua fazenda precisa de práticas sustentáveis!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Concurso Agrinho - Desenvolvido com 💚 para um futuro melhor.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
